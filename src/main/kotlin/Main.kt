@@ -2,7 +2,7 @@ fun main() {
     takeStrings("My", "Name", "is", "Ndemo")
     grammalCase()
     sumOfElements()
-    println(containsThreeNames("Novak", "Kelvin","Ndemo"))
+    println(containsThreeNames("Novak", "Kelvin","Ndemo").contentToString())
 
 }
 //takes in 4 strings and creates an array out of them
@@ -27,7 +27,9 @@ fun sumOfElements(){
     println(numbers.sortedArray().contentToString())
 }
 //takes 3 names and returns a string array containing 3 names
-fun containsThreeNames(name1: String,name2: String, name3: String): String{
-    return ("$name1 $name2 $name3")
+fun containsThreeNames(name1: String,name2: String, name3: String): Array<String>{
+    var arrayOutPut = arrayOf(name1, name2, name3)
+    return arrayOutPut
+
 
 }
